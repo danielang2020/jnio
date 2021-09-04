@@ -24,5 +24,6 @@ public class BufferFlipDemo {
 		System.out.println("after one flip capacity=" + allocate.capacity() + " limit=" + allocate.limit() + " position=" + allocate.position());
 		allocate.get();//throw BufferUnderflowException
 
+		allocate.put(1);// throw BufferOverflowException
 	}
 }
